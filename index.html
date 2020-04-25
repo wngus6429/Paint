@@ -7,6 +7,32 @@
     <title>PaintJs</title>
   </head>
   <body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+      <div class="controls__range">
+        <!--페인트 브러쉬의 사이즈 컨트롤, value는 기본값, step 숫자사이 간격-->
+        <input type="range" id="jsRange" min="0.1" max="5.0" value="2.5" step="0.1" />
+      </div>
+      <div class="controls__btns">
+        <button id="jsMode">Fill</button>
+        <button id="jsSave">Save</button>
+      </div>
+      <div class="controls__colors" id="jsColors">
+        <div class="controls__color jsColor" style="background-color: black;"></div>
+        <div class="controls__color jsColor" style="background-color: white;"></div>
+        <div class="controls__color jsColor" style="background-color: red;"></div>
+        <div class="controls__color jsColor" style="background-color: orange;"></div>
+        <div class="controls__color jsColor" style="background-color: yellow;"></div>
+        <div class="controls__color jsColor" style="background-color: green;"></div>
+        <div class="controls__color jsColor" style="background-color: #05f8fa;"></div>
+        <div class="controls__color jsColor" style="background-color: blue;"></div>
+        <div class="controls__color jsColor" style="background-color: purple;"></div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
+
+<!-- canvas는 html 태그 -->
+<!-- 스타일은 모두 class를 사용할 예정 -->
+<!-- 자바스크립트로 작업할땐 id로 -->
